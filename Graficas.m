@@ -13,7 +13,6 @@ T7 = temps{:,9}; % Vaso dewar
 to2 = o2{:,2}; % Tiempo 
 po2 = o2{:,2}; % %O2
 
-params = [0 0 10 8];
 
 %% General
 figure;
@@ -33,7 +32,7 @@ plot(t, T7, "DisplayName", "Vaso Dewar");
 legend;
 
 set(gcf, "PaperPosition", params)
-saveas(gcf, "general", "svg")
+saveas(gcf, "Graficos/general", "png")
 
 %% Agua
 figure;
@@ -48,7 +47,7 @@ plot(t, T2, "DisplayName", "Agua Interior (Abajo)");
 legend;
 
 set(gcf, "PaperPosition", params)
-saveas(gcf, "agua", "svg")
+saveas(gcf, "Graficos/agua", "png")
 
 %% Pared Calorimetro
 figure;
@@ -62,7 +61,7 @@ plot(t, T3, "DisplayName", "Pared Externa Calorimetro");
 legend;
 
 set(gcf, "PaperPosition", params)
-saveas(gcf, "calorimetro", "svg")
+saveas(gcf, "Graficos/calorimetro", "png")
 
 %% Gases
 figure;
@@ -79,7 +78,7 @@ plot(t, T5, "DisplayName", "Aire Ambiente");
 legend;
 
 set(gcf, "PaperPosition", params)
-saveas(gcf, "gases", "svg")
+saveas(gcf, "Graficos/gases", "png")
 
 %% Vaso Dewar
 figure;
@@ -94,4 +93,4 @@ plot(t, T7, "DisplayName", "Vaso Dewar");
 legend;
 
 set(gcf, "PaperPosition", params)
-saveas(gcf, "dewar", "svg")
+saveas(gcf, "Graficos/dewar", "png")
